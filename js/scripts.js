@@ -37,11 +37,12 @@ let pokemonList= [
       document.write("<div class='card'>");
       document.write('<p>Name: ' + pokemonList[i].name + '</p>');
       document.write('<p>Height: ' + pokemonList[i].height + '</p>');
+      // If the pokemon is taller than 1.5, then they are tall
       if (pokemonList[i].height > 1.5) {
-        document.write("You're tall!")
+        document.write("You're tall!");
       }
       document.write('<p>Type: ' + pokemonList[i].types[pokemonList[i].type1]+ '</p>');
-      // If the 2nd type is not null
+      // If the 2nd type is not null or is not empty
       if(pokemonList[i].type2 > 0) {
         document.write('Type: ' + pokemonList[i].types[pokemonList[i].type2]+ '</p>');
         }
